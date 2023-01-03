@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.left-side {
+  background-image: url(https://wallpaperaccess.com/full/3012890.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  transition: all 0.3s linear;
+}
+
+.right-side {
+  background-image: url(https://news.xbox.com/en-us/wp-content/uploads/sites/2/2020/09/XSX_XSS_Design_HERO.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  transition: all 0.3s linear;
+}
+
+.color-left {
+  width: 100%;
+  height: 100%;
+  background-color: #1d355773;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.color-right {
+  width: 100%;
+  height: 100%;
+  background-color: #2b2d429f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  margin: 250px 0 105px 0;
+  color: white;
+  font-size: 4rem;
+}
+
+button {
+  width: 180px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+  transition: all 0.2s linear;
+}
+
+.right-side button:hover {
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  background-color: #588157;
+}
+
+.left-side button:hover {
+  cursor: pointer;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+
+.show {
+  width: 95%;
+}
